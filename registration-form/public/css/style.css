@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.form-wrapper {
+    max-width: 350px;
+    margin: auto;
+}
+
+.form-wrapper :where(.form-control,.btn) {
+    width: 100%;
+}
+
+.error-messages {
+    color: red;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.error-messages li::before {
+    content: "•";
+    margin-right: 5px;
+}
